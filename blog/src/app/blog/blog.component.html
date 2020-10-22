@@ -1,0 +1,24 @@
+<main role="main">
+  
+  <!-- Marketing messaging and featurettes
+      ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row container marketing">
+      <div class="col-sm-12 col-lg-4 text-center pt-5" *ngFor = "let doggo of doggos, index as doggoId">
+        <img class="rounded-circle" src="{{doggo.img}}" alt="Ugly Doggo" width="140" height="140">
+        <h2>{{doggo.name}}</h2>
+        <p>{{doggo.quote}}</p>
+        <p><a class="btn btn-secondary" [routerLink] = "['/doggos', doggoId]">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <hr class="featurette-divider">
+    <!-- /END THE FEATURETTES -->
+  </div><!-- /.container -->
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2020 Ugly Doggos Adoption Center &middot; <a routerLink = "/about">About</a> &middot; <a routerLink = "/contact">Contact</a></p>
+  </footer>
+</main>
