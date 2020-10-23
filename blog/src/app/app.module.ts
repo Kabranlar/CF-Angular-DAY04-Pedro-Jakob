@@ -8,6 +8,10 @@ import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { DoggoDetailsComponent } from './doggo-details/doggo-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ServicesComponent } from './services/services.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { DoggoDetailsComponent } from './doggo-details/doggo-details.component';
     BlogComponent,
     AboutComponent,
     ContactComponent,
-    DoggoDetailsComponent
+    DoggoDetailsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
